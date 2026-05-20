@@ -5,6 +5,11 @@ def check_exam_status(
     login_time,
     is_public_holiday
 ):
+    
+    """
+    Checks exam status based on business rules.
+    """
+
     EXAM_CANCELED = "Exam Canceled"
     EXAM_ACCEPTED = "Exam Accepted"
     
