@@ -1,4 +1,4 @@
-from src.exam import check_exam_status
+from online_exam import check_exam_status
 
 
 
