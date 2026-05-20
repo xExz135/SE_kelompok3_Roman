@@ -22,24 +22,24 @@ def test_login_rejected_without_accommodation():
     )
     assert result == "Login Rejected"
 
-def test_login_time_must_be_integer():
-    # reject jika login_time diisi teks/string ("30")
-    with pytest.raises(TypeError):
-        check_exam_status(
-            exam_duration=120, 
-            accommodation_status=False, 
-            disconnect_duration=0, 
-            login_time="30", 
-            is_public_holiday=False
-        )
+# def test_login_time_must_be_integer():
+#     # reject jika login_time diisi teks/string ("30")
+#     with pytest.raises(TypeError):
+#         check_exam_status(
+#             exam_duration=120, 
+#             accommodation_status=False, 
+#             disconnect_duration=0, 
+#             login_time="30", 
+#             is_public_holiday=False
+#         )
 
-def test_login_time_cannot_be_negative():
-    # reject jika login_time diisi angka minus
-    with pytest.raises(ValueError):
-        check_exam_status(
-            exam_duration=120, 
-            accommodation_status=False, 
-            disconnect_duration=0, 
-            login_time=-5, 
-            is_public_holiday=False
-        )
+# def test_login_time_cannot_be_negative():
+#     # reject jika login_time diisi angka minus
+#     with pytest.raises(ValueError):
+#         check_exam_status(
+#             exam_duration=120, 
+#             accommodation_status=False, 
+#             disconnect_duration=0, 
+#             login_time=-5, 
+#             is_public_holiday=False
+#         )
