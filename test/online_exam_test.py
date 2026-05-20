@@ -1,7 +1,7 @@
 import pytest
 from src.exam import evaluate_exam
 
-
+# test case
 def test_exam_rejected_duration_above_120_without_accommodation():
     assert evaluate_exam(
         exam_duration=130,
