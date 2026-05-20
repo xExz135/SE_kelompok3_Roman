@@ -6,4 +6,7 @@ def check_exam_status(
     is_public_holiday
 ):
 
+    if is_public_holiday:
+        return "Exam Canceled"
+
     return "Exam Accepted"

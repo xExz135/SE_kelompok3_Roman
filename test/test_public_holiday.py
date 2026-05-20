@@ -36,8 +36,6 @@ def test_exam_not_canceled_when_not_public_holiday():
 
     assert result == "Exam Accepted"
 
-    from src.exam import check_exam_status
-
 
 def test_exam_canceled_when_public_holiday():
     result = check_exam_status(
