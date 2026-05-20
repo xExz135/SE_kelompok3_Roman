@@ -1,3 +1,4 @@
+import pytest
 from src.exam import check_exam_status
 
 def test_login_rejected_with_accommodation():
